@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Equity",
+  "description":"Chrome extension for equal and balanced news",
+  "version": "0.2.1",
+  "background": {
+    "scripts": ["jquery.min.js", "background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.facebook.com/*",
+        "*://facebook.com/*"
+      ],
+      "js": [ "script.js"]
+    }
+  ],
+  "icons": { 
+    "64": "icons/256.png",
+    "128": "icons/128.png",
+    "256": "icons/256.png",
+    "512": "icons/512.png",
+    "1024": "icons/1024.png"
+  }
+}
