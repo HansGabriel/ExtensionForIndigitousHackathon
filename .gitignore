@@ -1,3 +1,5 @@
 venv
+server/venv
 .DS_Store
 __pycache__
+.vs
