@@ -8,7 +8,7 @@ from functions.keywords import get_keywords
 from functions.summarize import summarize
 from functions.similarity import text_similarity
 from functions.scrape import scrape_img
-from functions.nouns import get_nouns
+#pip install -U spacy
 
 app = Flask(__name__)
 client = Wit("RMFPOSOO7USJCGV6OVOEFAURW7E3DUUW")
