@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Equity",
+  "name": "TruthFool",
   "description":"Chrome extension for equal and balanced news",
   "version": "0.2.1",
   "background": {
@@ -12,7 +12,9 @@
         "*://www.facebook.com/*",
         "*://facebook.com/*"
       ],
-      "js": [ "script.js"]
+      // "css": ["styles.css"],
+      "css": ["styles.css"],
+      "js": [ "jquery.min.js", "script.js"]
     }
   ],
   "icons": { 
