@@ -14,7 +14,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-3px);
+    transform: translateY(-0.5px);
   }
   100%{
     transform: translateY(0);
@@ -24,3 +24,12 @@
 #article_header_1 {
   animation: bounce 1s infinite;
 }
+/* 
+.hide {
+  display: none;
+}
+
+.ui.large.basic.teal.circular.icon.button:hover + .hide {
+  display: block !important;
+  color: red !important;
+} */

@@ -4,17 +4,16 @@
   "description":"Chrome extension for equal and balanced news",
   "version": "0.2.1",
   "background": {
-    "scripts": ["jquery.min.js", "background.js"]
+    "scripts": ["background.js", "jquery.min.js"]
   },
   "content_scripts": [
     {
       "matches": [
         "*://www.facebook.com/*",
         "*://facebook.com/*"
-      ],
-      // "css": ["styles.css"],
+      ],      
       "css": ["styles.css"],
-      "js": [ "jquery.min.js", "script.js"]
+      "js": ["jquery.min.js", "semantic.js", "prototype.js", "script.js"]
     }
   ],
   "icons": { 
