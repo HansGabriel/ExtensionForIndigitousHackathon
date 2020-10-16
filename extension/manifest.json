@@ -4,7 +4,7 @@
   "description":"Chrome extension for equal and balanced news",
   "version": "0.2.1",
   "background": {
-    "scripts": ["background.js", "jquery.min.js"]
+    "scripts": ["jquery.min.js", "semantic.js", "background.js"]
   },
   "content_scripts": [
     {
@@ -13,7 +13,7 @@
         "*://facebook.com/*"
       ],      
       "css": ["styles.css"],
-      "js": ["jquery.min.js", "semantic.js", "prototype.js", "script.js"]
+      "js": ["jquery.min.js", "semantic.js", "script.js", "prototype.js"]
     }
   ],
   "icons": { 
