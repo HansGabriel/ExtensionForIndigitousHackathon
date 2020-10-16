@@ -8,6 +8,234 @@
   font-size: inherit;
 }
 
+.ScoreComponent {
+  width: 45%;
+  background-color: grey !important;
+  border-color: grey !important;
+}
+.ScoreComponent p {
+  line-height: 0.9em;
+  font-weight: 600;
+  margin-top: 0.5em;
+  font-size: 1.1em
+}
+.ScoreComponent p span {
+  color: orange;
+  font-weight: 100;
+  font-size: 0.8em;
+}
+
+.CredibilityScore {
+  background-color: dimgrey;
+  color: lightgrey;
+  padding: 0 !important;
+}
+
+.CredibilityScore > div {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  flex-direction: row;
+  margin: 0;
+}
+
+.CredibilityScore > :first-child > :first-child {
+  margin: 1em;
+  width: 45%;
+  height: auto
+}
+
+.CredibilityScore > :first-child > :first-child h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+  margin-top: 0.8em;
+  padding-bottom: 0;
+  line-height: 0
+}
+
+.CredibilityScore > :first-child > :first-child h1 span {
+  font-size: 0.5em;
+}
+
+.CredibilityScore > :first-child > :first-child p {
+  margin-top: 1em;
+  font-weight: 600;
+  line-height: 0.9em;
+}
+
+.CredibilityScore > :first-child > :nth-child(2){
+  margin: 1em;
+  margin-left: 0;
+}
+
+.CredibilityScore > :nth-child(2) > :first-child {
+  margin:1em;
+  margin-top: 0;
+}
+
+.CredibilityScore > :nth-child(2) > :nth-child(2) {
+  margin:1em;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.ProgramDescription span {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.ProgramDescription div {
+  text-align: left;
+  font-size: 0.8em;
+  margin: 1em 1em;
+}
+
+.Article > :first-child {
+  font-size:0.9em;
+  line-height: 1.5em;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.Article > :first-child:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+
+.Article > :first-child > :first-child {
+  text-align: left
+}
+
+.Article > :first-child > :nth-child(2) {
+  text-align: right;
+  color: grey;
+}
+
+.Article > :nth-child(2) {
+  text-align: right;
+  color: cadetblue;
+  margin-top: 0;
+  font-size: 0.8em;
+}
+
+.ArticleContainer {
+  overflow-y: scroll;
+}
+
+.ArticleContainer .Article{
+  margin-bottom:1em
+}
+
+.ArticleContainer > :last-child {
+  margin-bottom: 0
+}
+
+.KeywordDefinition {
+  width: min-content;
+}
+
+.KeywordDefinition img {
+  padding-bottom: 1em !important;
+  height: 250px;
+  object-fit: cover;
+}
+
+.SpecialKeywordDefinition p:first-of-type{
+  text-align: center
+}
+
+.SpecialKeywordDefinition p:first-of-type i{
+  font-size: 6em;
+  line-height: 0;
+  margin-top: 0.1em;
+  margin-bottom: 0.4em
+}
+
+.SpecialKeywordDefinition p:first-of-type span{
+  font-size: 2.5em;
+  color: dimgrey;
+  line-height: 0;
+}
+
+.SpecialKeywordDefinition p {
+  color: grey;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 0.85em
+}
+
+.SpecialKeywordDefinition p b {
+  color:cadetblue
+}
+
+.SpecialKeywordDefinition p:last-of-type {
+  margin-top: auto;
+  margin-bottom: 0;
+  font-size: 1em;
+  padding: 1em;
+  margin-right: -1em;
+  border-radius: 20px 0 0 20px;
+  text-align: right; color: cadetblue
+}
+
+.SpecialRecommendation {
+  overflow-y: scroll;
+  max-height: 550px;
+  padding: 1.5em
+}
+
+.SpecialRecommendation > div:first-of-type  .ui.horizontal.divider {
+  color:grey !important;
+  margin: 1em;
+}
+
+.SpecialRecommendation > div:first-child a {
+  width: 100% !important;
+  font-weight: 100;
+  margin-bottom: 0.5em
+}
+
+.SpecialRecommendation > div .ui.horizontal.divider {
+  color:grey !important;
+  margin: 5em 0 1em 0;
+}
+
+.SpecialRecommendation > div:nth-of-type(2) {
+  margin: 0 -0.5em;
+}
+
+.SpecialRecommendation > div:nth-of-type(2) > div:nth-of-type(2){
+  background-color: gainsboro;
+  padding: 2em 1em;
+  border-radius: 10px
+}
+
+.SpecialRecommendation > div:nth-of-type(2) > div:nth-of-type(2) a {
+  font-weight: 100;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-decoration-line: underline;
+}
+
+.SpecialRecommendation > div:nth-of-type(2) > div:nth-of-type(2) i {
+  font-size: 0.8em;
+}
+
+.SpecialRecommendation > div:nth-of-type(2) > div:nth-of-type(2) :nth-last-of-type(even) {
+  text-align: left
+}
+
+.SpecialRecommendation > div:nth-of-type(2) > div:nth-of-type(2) :nth-last-of-type(odd) {
+  text-align: right
+}
+
+.SpecialRecommendation > div:nth-of-type(3) > div:nth-of-type(2) > div {
+  margin-bottom: 1em
+}
+
+.SpecialRecommendation > div:nth-of-type(3) > div:nth-of-type(2) > div:last-child {
+  margin-bottom: 0em
+}
+
 /* CSS animations */
 @keyframes bounce {
   0% {

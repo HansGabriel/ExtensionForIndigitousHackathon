@@ -1,0 +1,14 @@
+<div class="ui center aligned column" style="background-color: dimgrey; color: lightgrey">
+          <br>
+          <i class="yellow huge bug icon" style="color: white"></i>
+          <br>
+          <br>
+          <span style="font-weight: 600; font-size: 1.2em">
+            Oops!
+          </span>
+          <div style="text-align: left; font-size: 0.8em; margin: 1em 1em;">
+            <span>
+              This section is reserved for an article's <b> Credibility Score</b>. In the interest of time this was no longer implemented.
+            </span>
+          </div>
+        </div>6:25 PM 14/10/20206:25 PM 14/10/2020
