@@ -45,12 +45,11 @@ def suggestions():
 		summarized = summarized + " good positive advantage benefit"
 	title, link, domain = get_news(summarized)
 	similarity = text_similarity(headline, summarized)
-	img = scrape_img(link)
 
 	source = {
 		'domain': domain,
 		'id': uuid.uuid4(),
-		'image': img,
+		'image': "img",
 		'link': link,
 		'similarity': similarity,  
 		'stance': stance,
@@ -60,44 +59,6 @@ def suggestions():
 	response['suggestions'] = arr
 	return response
 
-
-@app.route('/is_political', methods=['GET'])
-def is_news_political():
-	political = False
-	political_trait = get_traits(request.args.get('headline'))["Political"][0]
-	# political_trait = get_traits("Bill Clinton and Sally Yates dress down Trump: Key moments from Night 2 of the Dem convention")["Political"][0]
-	print(political_trait)
-	if political_trait["value"] == "political":
-		political = True 
-	response = {
-		'political' : political
-	}
-	return jsonify(response)
-
-@app.route('/political_stance', methods=['GET'])
-def political_stance():
-	stance = "right"
-	traits = get_traits(request.args.get('headline'))
-	# traits = get_traits("Philippines expected to end GCQ")
-	if 'wit$sentiment' in traits:
-		political_stance = traits['wit$sentiment'][0]
-		if political_stance["value"] == "positive":
-			stance = "right"
-		elif political_stance["value"] == "negative":
-			stance = "left"
-		elif political_stance["value"] == "neutral"  and political_stance["confidence"] > 0.6:
-			stance = "right"
-		else:
-			stance = "central"
-		response = {
-			'stance' : stance
-		}
-		return jsonify(response)
-	stance = "central"
-	response = {
-		'stance' : stance
-	}
-	return jsonify(response)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
