@@ -8,12 +8,14 @@ from functions.keywords import get_keywords
 from functions.summarize import summarize
 from functions.similarity import text_similarity
 from functions.scrape import scrape_img
+from PyDictionary import PyDictionary
 #pip install -U spacy
 
 app = Flask(__name__)
 client = Wit("RMFPOSOO7USJCGV6OVOEFAURW7E3DUUW")
 CORS(app)
 app.config["DEBUG"] = True
+dictionary=PyDictionary()
 
 def get_traits(message):
 	traits = client.message(message)["traits"]
@@ -58,6 +60,12 @@ def suggestions():
 	arr.append(source)
 	response['suggestions'] = arr
 	return response
+
+@app.route('/definition', methods=['GET'])
+def definition():
+	text = request.args.get('text')
+	return dictionary.meaning(text)
+
 
 
 if __name__ == "__main__":
